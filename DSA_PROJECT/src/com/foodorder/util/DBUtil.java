@@ -72,7 +72,7 @@ public class DBUtil {
                         insertStmt.setString(2, "satyam");
                         insertStmt.setString(3, "Satyam@1207");
                         insertStmt.executeUpdate();
-                        System.out.println("✅ Default admin created: username='satyam', password='Satyam@1207'");
+                        System.out.println("✅ Default admin created: username='satyam'");
                     }
                 } else {
                     System.out.println("ℹ️ Admin 'satyam' already exists.");
