@@ -44,6 +44,9 @@ public class User implements Serializable {
     }
 
     public void setEmail(String email) {
+        if (email == null || !email.contains("@")) {
+            throw new IllegalArgumentException("Invalid email format.");
+        }
         this.email = email;
     }
 
